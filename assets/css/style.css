@@ -1,0 +1,261 @@
+body, div, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.0625em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+a:hover {
+    color: #0D6708;
+}
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+}
+nav {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 240px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px 2px 2px 40px;
+    position: relative;
+    float: left;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+   display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+nav  span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: black;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+a.active span {
+    height: 16px;
+    width: 16px;
+    margin: -9px 0 0 -9px;
+    border-radius: 100%;
+}
+ ul li:hover  span {
+    height: 20px;
+    width: 20px;
+    margin: -13px 0 0 -9px;
+    border-radius: 100%;
+}
+
+
+.slides-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide .centered {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    visibility: hidden;
+}
+
+.slide .centered h1 {
+  text-align: center; 
+    margin: 0;
+}
+
+.slide .centered p {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+
+#slide-1 {
+    background-color: #FFFFFF;
+}
+
+#slide-2 {
+    background-color: #45959b;
+}
+
+#slide-3 {
+    background-color: #778899;
+}
+
+#slide-4 {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+#slide-5 {
+    color: #FFFFFF;
+    background-color: #413257;
+}
+.go-prev, .go-next {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.action {
+    position: absolute;
+    left:50%; top:50%;
+    width: 200px !important; height: 200px;
+    background: red;
+}
+.cover {
+    width: 90vw;
+    height: 50.625vw;
+    max-height: 90vh;
+    max-width: 160vh;
+    margin: auto;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+}
+
+.cover img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+svg {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 80%;
+    overflow: visible;
+}
+#text, #kopf02, #mund02, #mund03, #hand01, .hidden {visibility: hidden;}
+
+
+.wrapME {
+    position: absolute;
+    top: 27%;
+    left: 11%;
+  height: 75%;
+    width: inherit;
+    overflow: hidden;
+}
+.me {
+    height: 85%;
+  top: 58% !important;
+}
+#YOU {
+    top: 89%;
+    left: 55%;
+    height: 8%;
+}
+.you {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 8;
+    stroke: #000;
+}
+#greenattack {width: 66%; overflow: hidden;}
+.greenattack {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 8px;
+    stroke: #000;
+}
+.sonne {visibility: hidden; left:0%;}
+.kugel {fill: black; visibility: hidden;}
+
+#slide-5 .cover {
+    overflow: visible;
+}
+.helmut {
+    height: 44%;
+    left: 4%;
+}
+.rauch {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 12;
+    stroke: #fff;
+    visibility: hidden;
+}
+
+.close {
+    position: absolute;
+    top: -1px;
+    right: 25px;
+    font-size: 55px;
+    font-weight: 300;
+    color: #49D549;
+    cursor: pointer;
+    z-index: 1000;
+}
+.againPIN, .againME, .againHELMUT, .againGreenAttack {
+    position: absolute;
+    top: auto;
+    bottom: 5%;
+    right: 5%;
+    color: #0D6708;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+    
+}
